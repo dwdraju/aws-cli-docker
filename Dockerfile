@@ -11,7 +11,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 
-ENV AWS_CLI_VERSION=1.15.77
+ENV AWS_CLI_VERSION=1.16.140
 
 RUN apk -v --update add groff less python py-pip zip && \
     pip install --upgrade awscli==$AWS_CLI_VERSION && \
