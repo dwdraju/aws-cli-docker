@@ -1,12 +1,12 @@
 # AWS CLI Docker Based on Alpine Linux
 
-### Usage
-```
-sudo docker run -it -v /path/to/.aws:/root/.aws dwdraju/aws-cli-docker aws s3api list-buckets --query "Buckets[].Name"
+## Usage
+```console
+docker run -it -v /path/to/.aws:/root/.aws dwdraju/aws-cli-docker aws s3api list-buckets --query "Buckets[].Name"
 ```
 
-#### CI/CD on Gitlab
-```
+### CI/CD on Gitlab
+```yaml
 code-build-artifact:
   stage: publish
   image: dwdraju/aws-cli-docker
